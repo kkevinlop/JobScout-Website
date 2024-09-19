@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    --primary: #3D87BD;
+    --background: rgba(154, 200, 255, 0.42);
+    --hover: rgb(0, 0, 0);
+}
+
+nav{
+    top: 0;
+    position:sticky;
+    z-index: 999;
+    padding: 20px 40px;
+    background-color: #68A1F7; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navs a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    padding: 7px;
+    border-radius: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.navs a:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+
+body {
+  background-color: var(--background); 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Register */
+.regis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  background: var(--backgroud);
+  background-size: cover;
+  z-index: 0;
+  min-height: 70vh;
+}
+
+.regis .bounding-box {
+  width: 500px;
+  padding: 20px;
+  margin: 2vh auto;
+  background: #9AC8FF;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.regis .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regis .form .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.regis .form .input-box {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.regis .form label {
+  color: white;
+}
+
+.regis .form input, .regis .form select {
+  height: 30px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgba(128, 128, 128, 0.589);
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.regis .form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.regis .form .gender-box {
+  margin-top: 20px;
+}
+
+.regis .form .gender-box h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.regis .form .gender-box .gender-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  margin-top: 8px;
+}
+
+.regis .form .gender-box .gender {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.regis .form .gender-box .gender input {
+  cursor: pointer;
+  height: 15px;
+  width: 16px; 
+  vertical-align: middle;
+}
+
+.regis .form .gender-box .gender label {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem; 
+  vertical-align: middle;
+}
+
+.regis .form .terms-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px; 
+}
+
+.regis .form .terms-box input {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+}
+
+.regis .form .terms-box label {
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  vertical-align: middle; 
+}
+
+.regis .form button {
+  height: 35px;
+  width: 35%;
+  font-size: 1.4rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 400;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.regis .form button:hover {
+  color: var(--hover);
+}
+
+.regis .form .login-text {
+  text-align: center;
+  margin-top: 15px;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.regis .form .login-text a {
+  color: var(--primary);
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.regis .form .login-text a:hover {
+  color: var(--hover);
+}
+
+/* footer */
+.footer {
+    background-color: #68A1F7;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    border-top: 1px solid var(--hover);
+}
+
+.footer p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.footer .links a{
+    color: black;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 1.1rem;
+}
+
+.footer .links a:hover{
+    color: var(--hover);
+}
+
+.footer a{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1 rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+script{
+    display: none;
+}
+
+@media (max-width : 800px){
+  .container{
+      padding: 20px;
+  }
+  .navs{
+      flex-direction: column;
+  }
+}

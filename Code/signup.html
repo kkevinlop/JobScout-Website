@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobScout Staffing</title>
+    <link rel="icon" href="./resources/job-scout-staffing.png">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/8702075647.js" crossorigin="anonymous"></script> 
+
+    <link rel="stylesheet" href="./css/style_signup.css">
+</head>
+<body>
+    
+    <!--Nav Bar-->
+    <!--Akan digunakan sebagai navigation bar untuk setiap page dari website-->
+    <nav class="navs">
+        <img src="./resources/job-scout-staffing.png" alt="" width = "75px" height="auto">
+        <div class="inside-nav">
+            <a href="home.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="detail.html">Detail</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Register -->
+    <section id="Register" class="regis">
+        <div class="bounding-box">
+            <form action="" class="form" method="post">
+                <div class="info">
+                <div class="row">
+                    <div class="input-box">
+                        <label for="firstname">First Name</label>
+                        <input type="text" placeholder="Enter your First Name" name="firstname" id="firstname"/>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" placeholder="Enter your Last name" name="lastname" id="lastname"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Enter your email address" name="email" id="email"/>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                        <label for="birth">Birth Date</label>
+                        <input type="date" placeholder="bod" name="birth" id="birth"/>
+                        </div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gender-box">
+                        <h3>Gender</h3>
+                        <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="male" name="gender"/>
+                            <label for="gender">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="female" name="gender"/>
+                            <label for="gender">Female</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="Enter your username" name="username" id="username"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" name="password" id="password"/>
+                    </div>
+                    <div class="input-box">
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Confirm your password" name="confpassword" id="confpassword"/>
+                    </div>
+                </div>  
+                <div class="terms-box">
+                    <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" />
+                    <label for="terms">Agree to Terms and Conditions</label>
+                </div>
+                <button type="button" id = "submit" onclick="validateData()">Submit</button>
+                <p class="login-text">Already have an account? <a href="login.html">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="links">
+            <a href="https://www.gmail.com">
+                <i data-feather="mail"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+                <i data-feather="instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+                <i data-feather="youtube"></i>
+            </a>
+            <a href="https://web.telegram.org/">
+                <i data-feather="send"></i>
+            </a>
+            <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjUyMjc4ODE5LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D""#">
+                <i data-feather="facebook"></i>
+            </a>
+        </div>
+        <a>&copy;2023 Jobscout Staffing</a>
+        <br>
+        <a>2540123044_KevinLaurentOktavianPutra</a>
+
+    </footer>
+
+    <!-- Icons -->
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
